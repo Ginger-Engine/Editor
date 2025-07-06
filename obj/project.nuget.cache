@@ -1,0 +1,108 @@
+{
+  "version": 2,
+  "dgSpecHash": "Lzp9TF78F1Y=",
+  "success": false,
+  "projectFilePath": "C:\\Users\\aleks\\projects\\Engine3\\Ginger.Editor\\Ginger.Editor.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\aleks\\.nuget\\packages\\box2d.netstandard\\1.0.4\\box2d.netstandard.1.0.4.nupkg.sha512",
+    "C:\\Users\\aleks\\.nuget\\packages\\microsoft.codecoverage\\17.14.1\\microsoft.codecoverage.17.14.1.nupkg.sha512",
+    "C:\\Users\\aleks\\.nuget\\packages\\microsoft.net.test.sdk\\17.14.1\\microsoft.net.test.sdk.17.14.1.nupkg.sha512",
+    "C:\\Users\\aleks\\.nuget\\packages\\microsoft.testplatform.objectmodel\\17.14.1\\microsoft.testplatform.objectmodel.17.14.1.nupkg.sha512",
+    "C:\\Users\\aleks\\.nuget\\packages\\microsoft.testplatform.testhost\\17.14.1\\microsoft.testplatform.testhost.17.14.1.nupkg.sha512",
+    "C:\\Users\\aleks\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\aleks\\.nuget\\packages\\raylib-cs\\7.0.1\\raylib-cs.7.0.1.nupkg.sha512",
+    "C:\\Users\\aleks\\.nuget\\packages\\system.collections.immutable\\8.0.0\\system.collections.immutable.8.0.0.nupkg.sha512",
+    "C:\\Users\\aleks\\.nuget\\packages\\system.reflection.metadata\\8.0.0\\system.reflection.metadata.8.0.0.nupkg.sha512",
+    "C:\\Users\\aleks\\.nuget\\packages\\xunit\\2.9.3\\xunit.2.9.3.nupkg.sha512",
+    "C:\\Users\\aleks\\.nuget\\packages\\xunit.abstractions\\2.0.3\\xunit.abstractions.2.0.3.nupkg.sha512",
+    "C:\\Users\\aleks\\.nuget\\packages\\xunit.analyzers\\1.18.0\\xunit.analyzers.1.18.0.nupkg.sha512",
+    "C:\\Users\\aleks\\.nuget\\packages\\xunit.assert\\2.9.3\\xunit.assert.2.9.3.nupkg.sha512",
+    "C:\\Users\\aleks\\.nuget\\packages\\xunit.core\\2.9.3\\xunit.core.2.9.3.nupkg.sha512",
+    "C:\\Users\\aleks\\.nuget\\packages\\xunit.extensibility.core\\2.9.3\\xunit.extensibility.core.2.9.3.nupkg.sha512",
+    "C:\\Users\\aleks\\.nuget\\packages\\xunit.extensibility.execution\\2.9.3\\xunit.extensibility.execution.2.9.3.nupkg.sha512",
+    "C:\\Users\\aleks\\.nuget\\packages\\yamldotnet\\16.3.0\\yamldotnet.16.3.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\Users\\aleks\\projects\\DiContainer\\DiContainer.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Users\\aleks\\projects\\DiContainer\\DiContainer.csproj",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\Users\\aleks\\projects\\Engine.Core\\Engine.Core.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Users\\aleks\\projects\\Engine.Core\\Engine.Core.csproj",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\Users\\aleks\\projects\\Engine.Coroutines\\Engine.Coroutines\\Engine.Coroutines.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Users\\aleks\\projects\\Engine.Coroutines\\Engine.Coroutines\\Engine.Coroutines.csproj",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\Users\\aleks\\projects\\Engine.Input.Raylib\\Engine.Input.Raylib.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Users\\aleks\\projects\\Engine.Input.Raylib\\Engine.Input.Raylib.csproj",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\Users\\aleks\\projects\\Engine.Input\\Engine.Input.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Users\\aleks\\projects\\Engine.Input\\Engine.Input.csproj",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\Users\\aleks\\projects\\Engine.Physics.Box2D\\Engine.Physics.Box2D.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Users\\aleks\\projects\\Engine.Physics.Box2D\\Engine.Physics.Box2D.csproj",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\Users\\aleks\\projects\\Engine.Physics\\Engine.Physics.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Users\\aleks\\projects\\Engine.Physics\\Engine.Physics.csproj",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\Users\\aleks\\projects\\Engine.Rendering.RaylibBackend\\Engine.Rendering.RaylibBackend.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Users\\aleks\\projects\\Engine.Rendering.RaylibBackend\\Engine.Rendering.RaylibBackend.csproj",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\Users\\aleks\\projects\\Engine.Rendering\\Engine.Rendering.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Users\\aleks\\projects\\Engine.Rendering\\Engine.Rendering.csproj",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    }
+  ]
+}
