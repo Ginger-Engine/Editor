@@ -497,9 +497,6 @@
       "Engine.Coroutines/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
-        "dependencies": {
-          "Engine.Core": "1.0.0"
-        },
         "compile": {
           "bin/placeholder/Engine.Coroutines.dll": {}
         },
