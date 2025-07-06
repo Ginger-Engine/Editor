@@ -1172,15 +1172,6 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "C:\\Users\\aleks\\projects\\DiContainer\\DiContainer.csproj",
-      "C:\\Users\\aleks\\projects\\Engine.Core\\Engine.Core.csproj",
-      "C:\\Users\\aleks\\projects\\Engine.Coroutines\\Engine.Coroutines\\Engine.Coroutines.csproj",
-      "C:\\Users\\aleks\\projects\\Engine.Input.Raylib\\Engine.Input.Raylib.csproj",
-      "C:\\Users\\aleks\\projects\\Engine.Input\\Engine.Input.csproj",
-      "C:\\Users\\aleks\\projects\\Engine.Physics.Box2D\\Engine.Physics.Box2D.csproj",
-      "C:\\Users\\aleks\\projects\\Engine.Physics\\Engine.Physics.csproj",
-      "C:\\Users\\aleks\\projects\\Engine.Rendering.RaylibBackend\\Engine.Rendering.RaylibBackend.csproj",
-      "C:\\Users\\aleks\\projects\\Engine.Rendering\\Engine.Rendering.csproj",
       "DiContainer >= 1.0.0",
       "Engine.Core >= 1.0.0",
       "Engine.Coroutines >= 1.0.0",
@@ -1225,38 +1216,14 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\aleks\\projects\\DiContainer\\DiContainer.csproj": {
-              "projectPath": "C:\\Users\\aleks\\projects\\DiContainer\\DiContainer.csproj"
-            },
-            "C:\\Users\\aleks\\projects\\Engine.Core\\Engine.Core.csproj": {
-              "projectPath": "C:\\Users\\aleks\\projects\\Engine.Core\\Engine.Core.csproj"
-            },
-            "C:\\Users\\aleks\\projects\\Engine.Coroutines\\Engine.Coroutines\\Engine.Coroutines.csproj": {
-              "projectPath": "C:\\Users\\aleks\\projects\\Engine.Coroutines\\Engine.Coroutines\\Engine.Coroutines.csproj"
-            },
-            "C:\\Users\\aleks\\projects\\Engine.Input.Raylib\\Engine.Input.Raylib.csproj": {
-              "projectPath": "C:\\Users\\aleks\\projects\\Engine.Input.Raylib\\Engine.Input.Raylib.csproj"
-            },
-            "C:\\Users\\aleks\\projects\\Engine.Input\\Engine.Input.csproj": {
-              "projectPath": "C:\\Users\\aleks\\projects\\Engine.Input\\Engine.Input.csproj"
-            },
-            "C:\\Users\\aleks\\projects\\Engine.Physics.Box2D\\Engine.Physics.Box2D.csproj": {
-              "projectPath": "C:\\Users\\aleks\\projects\\Engine.Physics.Box2D\\Engine.Physics.Box2D.csproj"
-            },
-            "C:\\Users\\aleks\\projects\\Engine.Physics\\Engine.Physics.csproj": {
-              "projectPath": "C:\\Users\\aleks\\projects\\Engine.Physics\\Engine.Physics.csproj"
-            },
-            "C:\\Users\\aleks\\projects\\Engine.Rendering.RaylibBackend\\Engine.Rendering.RaylibBackend.csproj": {
-              "projectPath": "C:\\Users\\aleks\\projects\\Engine.Rendering.RaylibBackend\\Engine.Rendering.RaylibBackend.csproj"
-            },
-            "C:\\Users\\aleks\\projects\\Engine.Rendering\\Engine.Rendering.csproj": {
-              "projectPath": "C:\\Users\\aleks\\projects\\Engine.Rendering\\Engine.Rendering.csproj"
-            },
             "C:\\Users\\aleks\\projects\\Engine3\\DiContainer\\DiContainer.csproj": {
               "projectPath": "C:\\Users\\aleks\\projects\\Engine3\\DiContainer\\DiContainer.csproj"
             },
             "C:\\Users\\aleks\\projects\\Engine3\\Engine.Core\\Engine.Core.csproj": {
               "projectPath": "C:\\Users\\aleks\\projects\\Engine3\\Engine.Core\\Engine.Core.csproj"
+            },
+            "C:\\Users\\aleks\\projects\\Engine3\\Engine.Coroutines\\Engine.Coroutines.csproj": {
+              "projectPath": "C:\\Users\\aleks\\projects\\Engine3\\Engine.Coroutines\\Engine.Coroutines.csproj"
             },
             "C:\\Users\\aleks\\projects\\Engine3\\Engine.Coroutines\\Engine.Coroutines\\Engine.Coroutines.csproj": {
               "projectPath": "C:\\Users\\aleks\\projects\\Engine3\\Engine.Coroutines\\Engine.Coroutines\\Engine.Coroutines.csproj"
@@ -1316,88 +1283,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Users\\aleks\\projects\\DiContainer\\DiContainer.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Users\\aleks\\projects\\DiContainer\\DiContainer.csproj",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Users\\aleks\\projects\\Engine.Core\\Engine.Core.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Users\\aleks\\projects\\Engine.Core\\Engine.Core.csproj",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Users\\aleks\\projects\\Engine.Coroutines\\Engine.Coroutines\\Engine.Coroutines.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Users\\aleks\\projects\\Engine.Coroutines\\Engine.Coroutines\\Engine.Coroutines.csproj",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Users\\aleks\\projects\\Engine.Input.Raylib\\Engine.Input.Raylib.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Users\\aleks\\projects\\Engine.Input.Raylib\\Engine.Input.Raylib.csproj",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Users\\aleks\\projects\\Engine.Input\\Engine.Input.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Users\\aleks\\projects\\Engine.Input\\Engine.Input.csproj",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Users\\aleks\\projects\\Engine.Physics.Box2D\\Engine.Physics.Box2D.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Users\\aleks\\projects\\Engine.Physics.Box2D\\Engine.Physics.Box2D.csproj",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Users\\aleks\\projects\\Engine.Physics\\Engine.Physics.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Users\\aleks\\projects\\Engine.Physics\\Engine.Physics.csproj",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Users\\aleks\\projects\\Engine.Rendering.RaylibBackend\\Engine.Rendering.RaylibBackend.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Users\\aleks\\projects\\Engine.Rendering.RaylibBackend\\Engine.Rendering.RaylibBackend.csproj",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Users\\aleks\\projects\\Engine.Rendering\\Engine.Rendering.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Users\\aleks\\projects\\Engine.Rendering\\Engine.Rendering.csproj",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    }
-  ]
+  }
 }

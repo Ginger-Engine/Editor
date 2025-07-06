@@ -8,17 +8,9 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\DiContainer\DiContainer.csproj" />
-      <ProjectReference Include="..\..\Engine.Core\Engine.Core.csproj" />
-      <ProjectReference Include="..\..\Engine.Coroutines\Engine.Coroutines\Engine.Coroutines.csproj" />
-      <ProjectReference Include="..\..\Engine.Input.Raylib\Engine.Input.Raylib.csproj" />
-      <ProjectReference Include="..\..\Engine.Input\Engine.Input.csproj" />
-      <ProjectReference Include="..\..\Engine.Physics.Box2D\Engine.Physics.Box2D.csproj" />
-      <ProjectReference Include="..\..\Engine.Physics\Engine.Physics.csproj" />
-      <ProjectReference Include="..\..\Engine.Rendering.RaylibBackend\Engine.Rendering.RaylibBackend.csproj" />
-      <ProjectReference Include="..\..\Engine.Rendering\Engine.Rendering.csproj" />
       <ProjectReference Include="..\DiContainer\DiContainer.csproj" />
       <ProjectReference Include="..\Engine.Core\Engine.Core.csproj" />
+      <ProjectReference Include="..\Engine.Coroutines\Engine.Coroutines.csproj" />
       <ProjectReference Include="..\Engine.Coroutines\Engine.Coroutines\Engine.Coroutines.csproj" />
       <ProjectReference Include="..\Engine.Input.Raylib\Engine.Input.Raylib.csproj" />
       <ProjectReference Include="..\Engine.Input\Engine.Input.csproj" />

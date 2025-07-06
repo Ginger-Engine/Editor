@@ -1,0 +1,25 @@
+﻿traits:
+  Movement:
+    actions:
+      Move:
+        type: Vector2
+        bindings:
+          - !Vector2FromButtons
+            up: !Button { device: Keyboard, control: W }
+            down: !Button { device: Keyboard, control: S }
+            left: !Button { device: Keyboard, control: A }
+            right: !Button { device: Keyboard, control: D }
+
+      Jump:
+        type: Button
+        bindings:
+          - !Button { device: Keyboard, control: Space }
+
+bindingSets:
+  Walk:
+    traits: [movement, look]
+    actions:
+      Interact:
+        type: Button
+        bindings:
+          - !Button { device: Keyboard, control: E }
