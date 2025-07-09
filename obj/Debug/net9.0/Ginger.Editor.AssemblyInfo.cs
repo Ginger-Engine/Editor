@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ginger.Editor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2077e7dcbb340fec57d62165b9d33a39090c0ada")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+99e63d98fcc3b6957503031edf05db8ed24a82b5")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ginger.Editor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ginger.Editor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

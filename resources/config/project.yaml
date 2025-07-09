@@ -1,13 +1,13 @@
 {
   "initialScene": "resources/scenes/mainScene.scene.yaml",
   "bundles": [
-    "App.AppBundle",
+    "Ginger.Editor.EditorBundle",
     "Engine.Core.CoreBundle",
     "Engine.Coroutines.CoroutinesBundle",
     "Engine.Rendering.RenderingBundle",
     "Engine.Rendering.RaylibBackend.RaylibRenderingBundle",
     "Engine.Input.InputBundle",
-    "Engine.Input.RaylibInput.RaylibInputBundle",
+    "Engine.Input.Raylib.RaylibInputBundle",
     "Engine.Physics.PhysicsBundle",
     "Engine.Physics.Box2D.PhysicsBox2DBundle"
   ]

@@ -11,7 +11,6 @@
       <ProjectReference Include="..\DiContainer\DiContainer.csproj" />
       <ProjectReference Include="..\Engine.Core\Engine.Core.csproj" />
       <ProjectReference Include="..\Engine.Coroutines\Engine.Coroutines.csproj" />
-      <ProjectReference Include="..\Engine.Coroutines\Engine.Coroutines\Engine.Coroutines.csproj" />
       <ProjectReference Include="..\Engine.Input.Raylib\Engine.Input.Raylib.csproj" />
       <ProjectReference Include="..\Engine.Input\Engine.Input.csproj" />
       <ProjectReference Include="..\Engine.Physics.Box2D\Engine.Physics.Box2D.csproj" />
@@ -40,6 +39,14 @@
         </None>
 
         <None Update="resources\scenes\mainScene.scene.yaml">
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+
+        <None Update="resources\spaceship.png">
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+
+        <None Update="resources\bg.jpg">
           <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </None>
     </ItemGroup>

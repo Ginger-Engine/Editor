@@ -497,6 +497,9 @@
       "Engine.Coroutines/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Engine.Core": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Engine.Coroutines.dll": {}
         },
@@ -553,7 +556,8 @@
           "Box2D.NetStandard": "1.0.4",
           "Engine.Core": "1.0.0",
           "Engine.Physics": "1.0.0",
-          "Engine.Rendering": "1.0.0"
+          "Engine.Rendering": "1.0.0",
+          "Engine.Rendering.RaylibBackend": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Engine.Physics.Box2D.dll": {}
@@ -1136,8 +1140,8 @@
     },
     "Engine.Coroutines/1.0.0": {
       "type": "project",
-      "path": "../Engine.Coroutines/Engine.Coroutines/Engine.Coroutines.csproj",
-      "msbuildProject": "../Engine.Coroutines/Engine.Coroutines/Engine.Coroutines.csproj"
+      "path": "../Engine.Coroutines/Engine.Coroutines.csproj",
+      "msbuildProject": "../Engine.Coroutines/Engine.Coroutines.csproj"
     },
     "Engine.Input/1.0.0": {
       "type": "project",
@@ -1224,9 +1228,6 @@
             },
             "C:\\Users\\aleks\\projects\\Engine3\\Engine.Coroutines\\Engine.Coroutines.csproj": {
               "projectPath": "C:\\Users\\aleks\\projects\\Engine3\\Engine.Coroutines\\Engine.Coroutines.csproj"
-            },
-            "C:\\Users\\aleks\\projects\\Engine3\\Engine.Coroutines\\Engine.Coroutines\\Engine.Coroutines.csproj": {
-              "projectPath": "C:\\Users\\aleks\\projects\\Engine3\\Engine.Coroutines\\Engine.Coroutines\\Engine.Coroutines.csproj"
             },
             "C:\\Users\\aleks\\projects\\Engine3\\Engine.Input.Raylib\\Engine.Input.Raylib.csproj": {
               "projectPath": "C:\\Users\\aleks\\projects\\Engine3\\Engine.Input.Raylib\\Engine.Input.Raylib.csproj"

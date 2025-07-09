@@ -1,3 +1,36 @@
 behaviours:
 
 entities:
+  - id: 43337317-7a5c-4622-b3ba-6ba585b55408
+    name: Background
+    components:
+      - type: Engine.Rendering.Sprites.SpriteComponent
+        parameters:
+          Texture: "/resources/bg.jpg"
+      - type: Engine.Rendering.RenderableComponent
+        parameters:
+          Layer: Ui
+      - type: Engine.Core.Transform.TransformComponent
+        parameters:
+          Position: { x: -5, y: -5 }
+          Rotation: 0
+          Scale: { x: 1, y: 1 }
+    behaviours:
+      - Engine.Core.Transform.TransformUpdaterBehaviour
+      - Engine.Rendering.Sprites.SpriteRenderer
+  - name: Camera
+    id: 047428fd-6063-4475-976a-1828a9e09ea0
+    components:
+      - type: Engine.Rendering.Cameras.CameraComponent
+        parameters:
+          CameraType: ScreenSpace
+          Layers:
+            - Ui
+      - type: Engine.Core.Transform.TransformComponent
+        parameters:
+          Position: { x: 0, y: 0 }
+          Rotation: 0
+          Scale: { x: 1, y: 1 }
+    behaviours:
+      - Engine.Rendering.Cameras.CameraBehaviour
+      - Engine.Core.Transform.TransformUpdaterBehaviour

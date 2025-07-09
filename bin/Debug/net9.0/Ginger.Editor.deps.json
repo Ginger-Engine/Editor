@@ -423,6 +423,17 @@
           }
         }
       },
+      "Engine.Coroutines/1.0.0": {
+        "dependencies": {
+          "Engine.Core": "1.0.0"
+        },
+        "runtime": {
+          "Engine.Coroutines.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "Engine.Input/1.0.0": {
         "dependencies": {
           "Engine.Core": "1.0.0",
@@ -464,7 +475,8 @@
           "Box2D.NetStandard": "1.0.4",
           "Engine.Core": "1.0.0",
           "Engine.Physics": "1.0.0",
-          "Engine.Rendering": "1.0.0"
+          "Engine.Rendering": "1.0.0",
+          "Engine.Rendering.RaylibBackend": "1.0.0"
         },
         "runtime": {
           "Engine.Physics.Box2D.dll": {
@@ -630,6 +642,11 @@
       "sha512": ""
     },
     "Engine.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Engine.Coroutines/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

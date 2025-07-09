@@ -5,5 +5,5 @@ fonts:
   - name: Arial
     filename: /resources/fonts/Arial.ttf
     baseSize: 24
-windowSize: { x: height / 2, y: height }
-windowTitle: Test Game
+windowSize: { x: width, y: height }
+windowTitle: Editor
