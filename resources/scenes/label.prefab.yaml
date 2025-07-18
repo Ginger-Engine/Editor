@@ -1,0 +1,25 @@
+id: 3847d954-829e-4321-9aaf-37688ae90612
+name: Label
+components:
+  - type: Engine.Core.Transform.TransformComponent
+    parameters:
+      Transform:
+        Position: $Position
+        Rotation: $Rotation
+        Scale: $Scale
+  - type: Engine.Rendering.RenderableComponent
+    parameters:
+      Layer: $Layer
+  - type: Engine.Rendering.RaylibBackend.Labels.LabelComponent
+    parameters:
+      Text: $Text
+      FontSize: $FontSize
+      Font: $Font
+      Color: $Color
+  - type: Engine.Rendering.RectangleComponent
+    parameters:
+      Size: $Size
+behaviours:
+  - Engine.Core.Transform.TransformUpdaterBehaviour
+  - Engine.Rendering.RaylibBackend.Labels.LabelRenderer
+  - Engine.Rendering.RectangleUpdaterBehaviour 

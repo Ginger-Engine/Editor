@@ -5,7 +5,11 @@ components:
     parameters:
       Texture: "/resources/emptyTexture.png"
       Color: "#FFEEEEEE"
-      Size: { x: 300, y: 800 }
+  - type: Engine.Rendering.RectangleComponent
+    parameters:
+      Size:
+        x: 300
+        y: 800
   - type: Engine.Rendering.RenderableComponent
     parameters:
       Layer: Ui
@@ -18,6 +22,7 @@ components:
 behaviours:
   - Engine.Core.Transform.TransformUpdaterBehaviour
   - Engine.Rendering.RaylibBackend.Sprites.SpriteRenderer
+  - Engine.Rendering.RectangleUpdaterBehaviour
 children:
   - id: ba6eb271-1326-4b26-8154-3ddcb1bdf073
     name: Header
@@ -29,7 +34,11 @@ children:
         parameters:
           Texture: "/resources/emptyTexture.png"
           Color: "#FF444444"
-          Size: { x: 300, y: 50 }
+      - type: Engine.Rendering.RectangleComponent
+        parameters:
+          Size:
+            x: 300
+            y: 150
       - type: Engine.Core.Transform.TransformComponent
         parameters:
           Transform:
@@ -39,26 +48,20 @@ children:
     behaviours:
       - Engine.Core.Transform.TransformUpdaterBehaviour
       - Engine.Rendering.RaylibBackend.Sprites.SpriteRenderer
+      - Engine.Rendering.RectangleUpdaterBehaviour
     children:
       - id: 0ab884d1-d36e-4914-82bf-33f8f6e26cdb
         name: Header Title
-        components:
-          - type: Engine.Core.Transform.TransformComponent
-            parameters:
-              Transform:
-                Position: { x: 5, y: 0 }
-                Rotation: 0
-                Scale: { x: 1, y: 1 }
-          - type: Engine.Rendering.RenderableComponent
-            parameters:
-              Layer: Ui
-          - type: Engine.Rendering.RaylibBackend.Labels.LabelComponent
-            parameters:
-              Text: $Header
-              FontSize: 24
-              Font: OpenSans
-              Color: "#FFFFFFFF"
-              Size: { x: 290, y: 50 }
-        behaviours:
-          - Engine.Core.Transform.TransformUpdaterBehaviour
-          - Engine.Rendering.RaylibBackend.Labels.LabelRenderer
+        prefab: "resources/scenes/label.prefab.yaml"
+        parameters:
+          Text: $Header
+          FontSize: 24
+          Font: OpenSans
+          Color: "#FFFFFFFF"
+          Size:
+            x: parent.width
+            y: parent.height
+          Position: { x: 5, y: 0 }
+          Rotation: 0
+          Scale: { x: 1, y: 1 }
+          Layer: Ui
