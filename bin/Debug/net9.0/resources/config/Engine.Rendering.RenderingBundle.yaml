@@ -1,9 +1,0 @@
-﻿layers:
-  - Main
-  - Ui
-fonts:
-  - name: Arial
-    filename: /resources/fonts/Arial.ttf
-    baseSize: 24
-windowSize: { x: width, y: height }
-windowTitle: Editor

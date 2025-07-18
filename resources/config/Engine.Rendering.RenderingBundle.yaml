@@ -2,8 +2,11 @@
   - Main
   - Ui
 fonts:
-  - name: Arial
-    filename: /resources/fonts/Arial.ttf
-    baseSize: 24
+#  - name: Arial
+#    filename: /resources/fonts/Arial.ttf
+#    baseSize: 24
+  - name: OpenSans
+    filename: /resources/fonts/OpenSans_Condensed-Regular.ttf
+    baseSize: 64
 windowSize: { x: width, y: height }
 windowTitle: Editor

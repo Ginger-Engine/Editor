@@ -55,8 +55,8 @@ children:
           - type: Engine.Rendering.RaylibBackend.Labels.LabelComponent
             parameters:
               Text: $Header
-              FontSize: 10
-              Font: Arial
+              FontSize: 24
+              Font: OpenSans
               Color: "#FFFFFFFF"
               Size: { x: 290, y: 50 }
         behaviours:
