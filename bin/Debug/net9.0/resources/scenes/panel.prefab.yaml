@@ -1,0 +1,64 @@
+﻿id: 59d9f43a-ffe0-454d-8447-aa5f990ed505
+name: Panel
+components:
+  - type: Engine.Rendering.RaylibBackend.Sprites.SpriteComponent
+    parameters:
+      Texture: "/resources/emptyTexture.png"
+      Color: "#FFEEEEEE"
+      Size: { x: 300, y: 800 }
+  - type: Engine.Rendering.RenderableComponent
+    parameters:
+      Layer: Ui
+  - type: Engine.Core.Transform.TransformComponent
+    parameters:
+      Transform:
+        Position: $Position
+        Rotation: $Rotation
+        Scale: $Scale
+behaviours:
+  - Engine.Core.Transform.TransformUpdaterBehaviour
+  - Engine.Rendering.RaylibBackend.Sprites.SpriteRenderer
+children:
+  - id: ba6eb271-1326-4b26-8154-3ddcb1bdf073
+    name: Header
+    components:
+      - type: Engine.Rendering.RenderableComponent
+        parameters:
+          Layer: Ui
+      - type: Engine.Rendering.RaylibBackend.Sprites.SpriteComponent
+        parameters:
+          Texture: "/resources/emptyTexture.png"
+          Color: "#FF444444"
+          Size: { x: 300, y: 50 }
+      - type: Engine.Core.Transform.TransformComponent
+        parameters:
+          Transform:
+            Position: { x: 0, y: 0 }
+            Rotation: 0
+            Scale: { x: 1, y: 1 }
+    behaviours:
+      - Engine.Core.Transform.TransformUpdaterBehaviour
+      - Engine.Rendering.RaylibBackend.Sprites.SpriteRenderer
+    children:
+      - id: 0ab884d1-d36e-4914-82bf-33f8f6e26cdb
+        name: Header Title
+        components:
+          - type: Engine.Core.Transform.TransformComponent
+            parameters:
+              Transform:
+                Position: { x: 5, y: 0 }
+                Rotation: 0
+                Scale: { x: 1, y: 1 }
+          - type: Engine.Rendering.RenderableComponent
+            parameters:
+              Layer: Ui
+          - type: Engine.Rendering.RaylibBackend.Labels.LabelComponent
+            parameters:
+              Text: $Header
+              FontSize: 10
+              Font: Arial
+              Color: "#FFFFFFFF"
+              Size: { x: 290, y: 50 }
+        behaviours:
+          - Engine.Core.Transform.TransformUpdaterBehaviour
+          - Engine.Rendering.RaylibBackend.Labels.LabelRenderer

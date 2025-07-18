@@ -49,6 +49,18 @@
         <None Update="resources\bg.jpg">
           <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </None>
+
+        <None Update="resources\scenes\camera.prefab.yaml">
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+
+        <None Update="resources\fonts\arial.ttf">
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="resources\panel\" />
     </ItemGroup>
 
 </Project>

@@ -1,36 +1,26 @@
 behaviours:
-
+  - Engine.Core.Transform.TransformUpdaterBehaviour
+components:
+  - type: Engine.Core.Transform.TransformComponent
+    parameters:
+      Transform:
+        Position: { x: 0, y: 0 }
+        Rotation: 0
+        Scale: { x: 1, y: 1 }
 children:
-  - id: 43337317-7a5c-4622-b3ba-6ba585b55408
-    name: Background
-    components:
-      - type: Engine.Rendering.RaylibBackend.Sprites.SpriteComponent
-        parameters:
-          Texture: "/resources/bg.jpg"
-      - type: Engine.Rendering.RenderableComponent
-        parameters:
-          Layer: Ui
-      - type: Engine.Core.Transform.TransformComponent
-        parameters:
-          Position: { x: -5, y: -5 }
-          Rotation: 0
-          Scale: { x: 1, y: 1 }
-    behaviours:
-      - Engine.Core.Transform.TransformUpdaterBehaviour
-      - Engine.Rendering.RaylibBackend.Sprites.SpriteRenderer
-  - name: Camera
-    id: 047428fd-6063-4475-976a-1828a9e09ea0
-    components:
-      - type: Engine.Rendering.Cameras.CameraComponent
-        parameters:
-          CameraType: ScreenSpace
-          Layers:
-            - Ui
-      - type: Engine.Core.Transform.TransformComponent
-        parameters:
-          Position: { x: 0, y: 0 }
-          Rotation: 0
-          Scale: { x: 1, y: 1 }
-    behaviours:
-      - Engine.Rendering.Cameras.CameraBehaviour
-      - Engine.Core.Transform.TransformUpdaterBehaviour
+  - id: 839bd8fd-221a-4730-8074-b16dc25393bc
+    name: Entities Tree Panel
+    prefab: "resources/scenes/panel.prefab.yaml"
+    parameters:
+      Header: Entities Tree Panel
+      Position: { x: 0, y: 0 }
+      Rotation: 0
+      Scale: { x: 1, y: 1 }
+  - prefab: "resources/scenes/Camera.prefab.yaml"
+    name: Ui Camera
+    parameters:
+      Position: { x: 0, y: 0 }
+      Rotation: 0
+      Scale: { x: 1, y: 1 }
+      Layers: [ Ui ]
+      CameraType: ScreenSpace

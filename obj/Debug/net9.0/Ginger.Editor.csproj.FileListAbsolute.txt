@@ -130,3 +130,7 @@ C:\Users\aleks\projects\Engine3\Ginger.Editor\obj\Debug\net9.0\Ginger.Editor.gen
 C:\Users\aleks\projects\Engine3\Ginger.Editor\obj\Debug\net9.0\ref\Ginger.Editor.dll
 C:\Users\aleks\projects\Engine3\Ginger.Editor\bin\Debug\net9.0\resources\bg.jpg
 C:\Users\aleks\projects\Engine3\Ginger.Editor\bin\Debug\net9.0\resources\spaceship.png
+C:\Users\aleks\projects\Engine3\Ginger.Editor\bin\Debug\net9.0\resources\scenes\panel.prefab.yaml
+C:\Users\aleks\projects\Engine3\Ginger.Editor\bin\Debug\net9.0\resources\scenes\camera.prefab.yaml
+C:\Users\aleks\projects\Engine3\Ginger.Editor\bin\Debug\net9.0\resources\emptyTexture.png
+C:\Users\aleks\projects\Engine3\Ginger.Editor\bin\Debug\net9.0\resources\fonts\arial.ttf
