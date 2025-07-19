@@ -1,0 +1,19 @@
+id: c7f0fead-3950-4036-bed8-4fba38e6ae2e
+name: SceneTreePanel
+prefab: "resources/scenes/panel.prefab.yaml"
+parameters:
+  Position: { x: 0, y: 0 }
+  Rotation: 0
+  Scale: { x: 1, y: 1 }
+behaviours:
+  - Ginger.Editor.Ui.SceneTreeLoaderBehaviour
+slots:
+  content:
+    - prefab: "resources/scenes/treeview.prefab.yaml"
+      parameters:
+        Nodes: []
+        Size: { x: 500, y: 700 }
+        Position: { x: 0, y: 0 }
+        Rotation: 0
+        Scale: { x: 1, y: 1 }
+        Layer: Ui

@@ -8,7 +8,7 @@ components:
   - type: Engine.Rendering.RectangleComponent
     parameters:
       Size:
-        x: 300
+        x: 500
         y: 800
   - type: Engine.Rendering.RenderableComponent
     parameters:
@@ -37,8 +37,8 @@ children:
       - type: Engine.Rendering.RectangleComponent
         parameters:
           Size:
-            x: 300
-            y: 150
+            x: parent.width
+            y: 50
       - type: Engine.Core.Transform.TransformComponent
         parameters:
           Transform:
@@ -65,3 +65,5 @@ children:
           Rotation: 0
           Scale: { x: 1, y: 1 }
           Layer: Ui
+  - name: ContentSlot
+    slot: content

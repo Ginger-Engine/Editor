@@ -8,9 +8,8 @@ components:
         Rotation: 0
         Scale: { x: 1, y: 1 }
 children:
-  - id: 839bd8fd-221a-4730-8074-b16dc25393bc
-    name: Entities Tree Panel
-    prefab: "resources/scenes/panel.prefab.yaml"
+  - name: Entities Tree Panel
+    prefab: "resources/scenes/sceneTreePanel.prefab.yaml"
     parameters:
       Header: Entities Tree Panel
       Position: { x: 0, y: 0 }

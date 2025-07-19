@@ -1,0 +1,22 @@
+id: 886a5c19-d570-445b-bdf9-1489b8c56315
+name: TreeView
+components:
+  - type: Ginger.Editor.Ui.TreeViewComponent
+    parameters:
+      Nodes: $Nodes
+  - type: Engine.Rendering.RectangleComponent
+    parameters:
+      Size: $Size
+  - type: Engine.Core.Transform.TransformComponent
+    parameters:
+      Transform:
+        Position: $Position
+        Rotation: $Rotation
+        Scale: $Scale
+  - type: Engine.Rendering.RenderableComponent
+    parameters:
+      Layer: $Layer
+behaviours:
+  - Engine.Core.Transform.TransformUpdaterBehaviour
+  - Engine.Rendering.RectangleUpdaterBehaviour
+  - Ginger.Editor.Ui.TreeViewBehaviour
