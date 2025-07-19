@@ -3,16 +3,21 @@ using Engine.Core.Entities;
 using Engine.Core.Scenes;
 using Engine.Rendering;
 using Engine.Core;
+using Engine.Core.Prefabs;
+using Engine.Core.Transform;
+using Engine.Rendering.RaylibBackend.Labels;
 
 namespace Ginger.Editor.Ui;
 
 public class TreeViewBehaviour : IEntityBehaviour
 {
     private readonly PrefabInstantiator _prefabInstantiator;
-    private readonly Entity _labelPrefab;
+    private readonly Prefab _labelPrefab;
     private readonly SceneManager _sceneManager;
     private readonly EntityBehaviourManager _entityBehaviourManager;
-    public TreeViewBehaviour(PrefabInstantiator prefabInstantiator, SceneManager sceneManager, EntityBehaviourManager entityBehaviourManager)
+
+    public TreeViewBehaviour(PrefabInstantiator prefabInstantiator, SceneManager sceneManager,
+        EntityBehaviourManager entityBehaviourManager)
     {
         _prefabInstantiator = prefabInstantiator;
         _sceneManager = sceneManager;
@@ -56,18 +61,19 @@ public class TreeViewBehaviour : IEntityBehaviour
         CreateTreeEntities(entity, map, "", 0, ref y, rect.SizeCache.X);
     }
 
-    private void CreateTreeEntities(Entity parent, Dictionary<string, List<TreeNode>> map, string parentId, int depth, ref float y, float width)
+    private void CreateTreeEntities(Entity parent, Dictionary<string, List<TreeNode>> map, string parentId, int depth,
+        ref float y, float width)
     {
         if (!map.TryGetValue(parentId, out var nodes)) return;
         foreach (var node in nodes)
         {
-            var labelOverride = new Engine.Rendering.RaylibBackend.Labels.LabelComponent
+            var labelOverride = _labelPrefab.RootEntity.GetComponent<LabelComponent>();
+            labelOverride.Text = node.Label;
+            labelOverride.FontSize = 18;
+
+            var transformOverride = new TransformComponent
             {
-                Text = node.Label
-            };
-            var transformOverride = new Engine.Core.Transform.TransformComponent
-            {
-                Transform = new Engine.Core.Transform.Transform
+                Transform = new Transform
                 {
                     Position = new System.Numerics.Vector2(10 + depth * 20, y),
                     Rotation = 0,
@@ -84,12 +90,12 @@ public class TreeViewBehaviour : IEntityBehaviour
             );
             labelEntity.Name = $"TreeNode_{node.Id}";
             parent.Children.Add(labelEntity);
-            _sceneManager.CurrentScene.Entities.Add(labelEntity);
-            _entityBehaviourManager.Start(labelEntity);
+            labelEntity.Parent = parent;
+            _sceneManager.AddEntityToCurrentScene(labelEntity);
 
             y += 24;
             if (node.IsExpanded)
                 CreateTreeEntities(parent, map, node.Id, depth + 1, ref y, width);
         }
     }
-} 
+}

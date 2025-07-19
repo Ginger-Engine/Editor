@@ -6,9 +6,9 @@ namespace Ginger.Editor.Ui;
 public struct LabelPrefabParams()
 {
     public string Text = "";
-    public int FontSize = 18;
-    public string Font = "Arial";
-    public string Color = "#FFFFFFFF";
+    public int FontSize = 24;
+    public string Font = "OpenSans";
+    public string Color = "#FF000000";
     public object Size = new Dictionary<string, object> { ["x"] = 100, ["y"] = 24 };
     public object Position = new Dictionary<string, object> { ["x"] = 0, ["y"] = 0 };
     public float Rotation = 0f;

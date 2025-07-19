@@ -5,15 +5,25 @@ parameters:
   Position: { x: 0, y: 0 }
   Rotation: 0
   Scale: { x: 1, y: 1 }
-behaviours:
-  - Ginger.Editor.Ui.SceneTreeLoaderBehaviour
 slots:
   content:
-    - prefab: "resources/scenes/treeview.prefab.yaml"
-      parameters:
-        Nodes: []
-        Size: { x: 500, y: 700 }
-        Position: { x: 0, y: 0 }
-        Rotation: 0
-        Scale: { x: 1, y: 1 }
-        Layer: Ui
+    - id: 99488d22-33aa-4f11-a26f-fb9505869e7e
+      components:
+        - type: Engine.Core.Transform.TransformComponent
+          parameters:
+            Transform:
+              Position: { x: 0, y: 0 }
+              Rotation: 0
+              Scale: { x: 1, y: 1 }
+      behaviours:
+      - Ginger.Editor.Ui.SceneTreeViewBehaviour
+      - Engine.Core.Transform.TransformUpdaterBehaviour
+      children:
+      - prefab: "resources/scenes/treeview.prefab.yaml"
+        parameters:
+          Nodes: []
+          Size: { x: 500, y: 700 }
+          Position: { x: 0, y: 0 }
+          Rotation: 0
+          Scale: { x: 1, y: 1 }
+          Layer: Ui

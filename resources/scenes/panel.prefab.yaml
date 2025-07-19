@@ -65,5 +65,22 @@ children:
           Rotation: 0
           Scale: { x: 1, y: 1 }
           Layer: Ui
-  - name: ContentSlot
-    slot: content
+  - id: 5589abb5-9075-42e7-b889-10cf6fa8874b
+    name: Content Container
+    behaviours:
+      - Engine.Core.Transform.TransformUpdaterBehaviour
+    components:
+      - type: Engine.Rendering.RectangleComponent
+        parameters:
+          Size:
+            x: parent.width
+            y: parent.height - 50
+      - type: Engine.Core.Transform.TransformComponent
+        parameters:
+          Transform:
+            Position: { x: 0, y: 50 }
+            Rotation: 0
+            Scale: { x: 1, y: 1 }
+    children:
+      - name: ContentSlot
+        slot: content

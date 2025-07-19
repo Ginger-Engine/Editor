@@ -7,6 +7,6 @@ fonts:
 #    baseSize: 24
   - name: OpenSans
     filename: /resources/fonts/OpenSans_Condensed-Regular.ttf
-    baseSize: 64
+    baseSize: 32
 windowSize: { x: width, y: height }
 windowTitle: Editor
