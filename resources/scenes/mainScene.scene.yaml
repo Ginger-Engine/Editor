@@ -1,5 +1,6 @@
 behaviours:
   - Engine.Core.Transform.TransformUpdaterBehaviour
+  - Engine.Input.PointerEvents.PointerInputManager
 components:
   - type: Engine.Core.Transform.TransformComponent
     parameters:

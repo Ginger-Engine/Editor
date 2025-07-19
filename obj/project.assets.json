@@ -512,6 +512,7 @@
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
           "Engine.Core": "1.0.0",
+          "Engine.Rendering": "1.0.0",
           "YamlDotNet": "16.3.0"
         },
         "compile": {

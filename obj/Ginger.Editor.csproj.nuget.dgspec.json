@@ -336,6 +336,9 @@
             "projectReferences": {
               "C:\\Users\\aleks\\projects\\Engine3\\Engine.Core\\Engine.Core.csproj": {
                 "projectPath": "C:\\Users\\aleks\\projects\\Engine3\\Engine.Core\\Engine.Core.csproj"
+              },
+              "C:\\Users\\aleks\\projects\\Engine3\\Engine.Rendering\\Engine.Rendering.csproj": {
+                "projectPath": "C:\\Users\\aleks\\projects\\Engine3\\Engine.Rendering\\Engine.Rendering.csproj"
               }
             }
           }
