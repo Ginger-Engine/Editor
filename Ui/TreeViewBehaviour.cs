@@ -23,7 +23,7 @@ public class TreeViewBehaviour : IEntityBehaviour
         _sceneManager = sceneManager;
         _entityBehaviourManager = entityBehaviourManager;
         _labelPrefab = _prefabInstantiator.Load(
-            "resources/scenes/label.prefab.yaml",
+            "resources/scenes/treeviewListElement.prefab.yaml",
             new LabelPrefabParams().ToDictionary()
         );
     }
@@ -67,10 +67,6 @@ public class TreeViewBehaviour : IEntityBehaviour
         if (!map.TryGetValue(parentId, out var nodes)) return;
         foreach (var node in nodes)
         {
-            var labelOverride = _labelPrefab.RootEntity.GetComponent<LabelComponent>();
-            labelOverride.Text = node.Label;
-            labelOverride.FontSize = 18;
-
             var transformOverride = new TransformComponent
             {
                 Transform = new Transform
@@ -86,8 +82,13 @@ public class TreeViewBehaviour : IEntityBehaviour
             };
             var labelEntity = _prefabInstantiator.Instantiate(
                 _labelPrefab,
-                new IComponent[] { labelOverride, transformOverride, rectOverride }
+                new IComponent[] { transformOverride, rectOverride }
             );
+            labelEntity.Children[0].ModifySilently((ref LabelComponent label) =>
+            {
+                label.Text = node.Label;
+                label.FontSize = 18;
+            });
             labelEntity.Name = $"TreeNode_{node.Id}";
             parent.Children.Add(labelEntity);
             labelEntity.Parent = parent;

@@ -1,0 +1,21 @@
+﻿behaviours:
+  - Ginger.Editor.Ui.PointerEventHandlerBehaviour
+  - Engine.Rendering.RectangleUpdaterBehaviour
+  - Engine.Core.Transform.TransformUpdaterBehaviour
+components:
+  - type: Engine.Core.Transform.TransformComponent
+    parameters:
+      Transform:
+        Position: $Position
+        Rotation: $Rotation
+        Scale: $Scale
+  - type: Engine.Rendering.RectangleComponent
+    parameters:
+      Size: $Size
+children:
+  - prefab: "resources/scenes/label.prefab.yaml"
+    parameters:
+      Text: $Text
+      FontSize: 18
+      Font: $Font
+      Color: "#FF000000"

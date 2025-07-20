@@ -23,4 +23,3 @@ behaviours:
   - Engine.Core.Transform.TransformUpdaterBehaviour
   - Engine.Rendering.RaylibBackend.Labels.LabelRenderer
   - Engine.Rendering.RectangleUpdaterBehaviour
-  - Ginger.Editor.Ui.PointerEventHandlerBehaviour

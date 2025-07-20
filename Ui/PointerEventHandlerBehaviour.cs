@@ -12,14 +12,14 @@ public class PointerEventHandlerBehaviour(PointerInputManager pointerInputManage
     {
         pointerInputManager.Subscribe<EnterEvent>(entity, _ =>
         {
-            entity.Modify((ref LabelComponent label) =>
+            entity.Children[0].Modify((ref LabelComponent label) =>
             {
                 label.Color = Color.Blue;
             });
         });
         pointerInputManager.Subscribe<LeaveEvent>(entity, _ =>
         {
-            entity.Modify((ref LabelComponent label) =>
+            entity.Children[0].Modify((ref LabelComponent label) =>
             {
                 label.Color = Color.Black;
             });
@@ -28,8 +28,7 @@ public class PointerEventHandlerBehaviour(PointerInputManager pointerInputManage
 
     public void OnDestroy(Entity entity)
     {
-        
-        pointerInputManager.Unsubscribe<EnterEvent>(entity);
-        pointerInputManager.Unsubscribe<LeaveEvent>(entity);
+        pointerInputManager.Unsubscribe<EnterEvent>(entity.Children[0]);
+        pointerInputManager.Unsubscribe<LeaveEvent>(entity.Children[0]);
     }
 }

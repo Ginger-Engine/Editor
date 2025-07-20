@@ -138,3 +138,4 @@ C:\Users\aleks\projects\Engine3\Ginger.Editor\obj\Debug\net9.0\Ginger.Editor.gen
 C:\Users\aleks\projects\Engine3\Ginger.Editor\obj\Debug\net9.0\ref\Ginger.Editor.dll
 C:\Users\aleks\projects\Engine3\Ginger.Editor\bin\Debug\net9.0\resources\scenes\treeview.prefab.yaml
 C:\Users\aleks\projects\Engine3\Ginger.Editor\bin\Debug\net9.0\resources\scenes\sceneTreePanel.prefab.yaml
+C:\Users\aleks\projects\Engine3\Ginger.Editor\bin\Debug\net9.0\resources\scenes\treeviewListElement.prefab.yaml
