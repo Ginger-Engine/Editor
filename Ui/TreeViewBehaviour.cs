@@ -3,7 +3,6 @@ using Engine.Core.Entities;
 using Engine.Core.Scenes;
 using Engine.Rendering;
 using Engine.Core;
-using Engine.Core.Prefabs;
 using Engine.Core.Transform;
 using Engine.Rendering.RaylibBackend.Labels;
 
@@ -11,18 +10,15 @@ namespace Ginger.Editor.Ui;
 
 public class TreeViewBehaviour : IEntityBehaviour
 {
-    private readonly PrefabInstantiator _prefabInstantiator;
-    private readonly Prefab _labelPrefab;
-    private readonly SceneManager _sceneManager;
-    private readonly EntityBehaviourManager _entityBehaviourManager;
+    private readonly Instantiator _instantiator;
+    private World _world;
+    private Prefab _labelPrefab;
 
-    public TreeViewBehaviour(PrefabInstantiator prefabInstantiator, SceneManager sceneManager,
-        EntityBehaviourManager entityBehaviourManager)
+    public TreeViewBehaviour(Instantiator instantiator, World world)
     {
-        _prefabInstantiator = prefabInstantiator;
-        _sceneManager = sceneManager;
-        _entityBehaviourManager = entityBehaviourManager;
-        _labelPrefab = _prefabInstantiator.Load(
+        _instantiator = instantiator;
+        _world = world;
+        _labelPrefab = _instantiator.Load(
             "resources/scenes/treeviewListElement.prefab.yaml",
             new LabelPrefabParams().ToDictionary()
         );
@@ -39,7 +35,7 @@ public class TreeViewBehaviour : IEntityBehaviour
         // Удалить старые дочерние сущности (только для дерева)
         foreach (var child in entity.Children.ToList())
         {
-            if (child.Name != null && child.Name.StartsWith("TreeNode_"))
+            if (child.Name.StartsWith("TreeNode_"))
                 entity.Children.Remove(child);
         }
 
@@ -65,34 +61,35 @@ public class TreeViewBehaviour : IEntityBehaviour
         ref float y, float width)
     {
         if (!map.TryGetValue(parentId, out var nodes)) return;
+        
+        var transformOverride = new TransformComponent
+        {
+            Transform = new Transform
+            {
+                Position = new System.Numerics.Vector2(10 + depth * 20, y),
+                Rotation = 0,
+                Scale = System.Numerics.Vector2.One
+            }
+        };
+        
+        var rectOverride = new RectangleComponent
+        {
+            Size = new SizeExpression { X = width.ToString(), Y = "24" }
+        };
+        
         foreach (var node in nodes)
         {
-            var transformOverride = new TransformComponent
-            {
-                Transform = new Transform
-                {
-                    Position = new System.Numerics.Vector2(10 + depth * 20, y),
-                    Rotation = 0,
-                    Scale = System.Numerics.Vector2.One
-                }
-            };
-            var rectOverride = new RectangleComponent
-            {
-                Size = new SizeExpression { X = width.ToString(), Y = "24" }
-            };
-            var labelEntity = _prefabInstantiator.Instantiate(
+            var elementEntity = _instantiator.Instantiate(
                 _labelPrefab,
-                new IComponent[] { transformOverride, rectOverride }
+                parent,
+                [transformOverride, rectOverride]
             );
-            labelEntity.Children[0].ModifySilently((ref LabelComponent label) =>
+            elementEntity.Children[0].ModifySilently((ref LabelComponent label) =>
             {
                 label.Text = node.Label;
                 label.FontSize = 18;
             });
-            labelEntity.Name = $"TreeNode_{node.Id}";
-            parent.Children.Add(labelEntity);
-            labelEntity.Parent = parent;
-            _sceneManager.AddEntityToCurrentScene(labelEntity);
+            elementEntity.Name = $"TreeNode_{node.Id}";
 
             y += 24;
             if (node.IsExpanded)
